@@ -12,6 +12,8 @@
 
 ### 2.1 飞书创建应用
 
+在飞书上创建企业账号。
+
 在飞书开放平台上新建应用，记录下app id和app secret。
 <img width="1421" alt="截屏2023-03-30 09 24 57" src="https://user-images.githubusercontent.com/43341500/228703987-a475289c-33b5-4731-b7b5-567a7ad62b91.png">
 在权限管理中开放消息与群组中的所有权限（请注意有2页，共19个）。
@@ -56,4 +58,9 @@
 2. 增加regenerate、修改问题功能。
 3. 增加更多实用功能（如翻译、修正pdf复制结果等）
 
+## 5. 我的企业二维码
+
+您可以加入我的企业使用ChatGPT（包括GPT-4，但请合理控制使用量）。
+
+<img width="979" alt="截屏2023-03-30 09 54 15" src="https://user-images.githubusercontent.com/43341500/228708757-2dba5c64-1205-4a06-9055-129631e6e3b7.png">
 
