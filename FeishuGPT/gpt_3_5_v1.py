@@ -17,8 +17,8 @@ APP_SECRET = ""
 VERIFICATION_TOKEN = ''
 
 
-FIRST_TEXT = "这里是FeishuGPT，可以通过飞书机器人与ChatGPT进行对话。直接在这里发送您想要问ChatGPT的问题，然后您会被拉进一个群聊中与ChatGPT对话。当前问题不会发送给ChatGPT，如果想要问问题请再发送一遍。"
-HELP_TEXT = "这里是FeishuGPT，可以通过飞书机器人与ChatGPT进行对话。直接在这里发送您想要问ChatGPT的问题，然后您会被拉进一个群聊中与ChatGPT对话。"
+FIRST_TEXT = "这里是FeishuGPT，可以通过飞书机器人与ChatGPT进行对话。直接在这里发送您想要问ChatGPT的问题，然后您会被拉进一个群聊中与ChatGPT对话。请确保您发送的消息是纯文本，否则不会被回复。当前问题不会发送给ChatGPT，如果想要问问题请再发送一遍。"
+HELP_TEXT = "这里是FeishuGPT，可以通过飞书机器人与ChatGPT进行对话。直接在这里发送您想要问ChatGPT的问题，然后您会被拉进一个群聊中与ChatGPT对话。请确保您发送的消息是纯文本，否则不会被回复。"
 NORMAL_TEXT = "正在创建群聊，请稍等。"
 SYSTEM_MSG = '''I am ChatGPT, a large language model trained by OpenAI, based on the GPT-3.5 architecture.
 Knowledge cutoff: 2021-09
