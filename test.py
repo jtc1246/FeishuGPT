@@ -1,6 +1,6 @@
-from FeishuGPT import gpt_3_5_v1 as gpt
+from FeishuGPT import gpt_3_5_v2 as gpt
 from time import sleep
-from FeishuGPT import gpt_4_v1 as gpt4
+from FeishuGPT import gpt_4_v2 as gpt4
 
 
 APP_ID = "cli_xxxxxx"

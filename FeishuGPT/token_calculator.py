@@ -82,6 +82,9 @@ def get_msg_count(history):
     return (highest_index, highest_score_tokens)
 
 def filter_history(history):
+    if (len(history) == 2):
+        t = 4086 - safe_token_count(history[0]['content']) - safe_token_count(history[1]['content'])
+        return (history, min(t, 2048))
     num, token = get_msg_count(history)
     messages = [history[0]] + history[-num:]
     return (messages, min(token, 2048))

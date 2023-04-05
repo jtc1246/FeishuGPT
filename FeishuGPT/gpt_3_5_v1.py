@@ -242,6 +242,7 @@ class User:
                 try:
                     if (r['text']['code'] == 0):
                         success = True
+                        break
                 except:
                     pass
                 sleep(0.5)
@@ -266,6 +267,7 @@ class User:
                 try:
                     if (r['text']['code'] == 0):
                         success = True
+                        break
                 except:
                     pass
                 sleep(0.5)
@@ -290,6 +292,7 @@ class User:
                 try:
                     if (r['text']['code'] == 0):
                         success = True
+                        break
                 except:
                     pass
                 sleep(0.5)
@@ -325,6 +328,7 @@ class User:
                 try:
                     if (r['text']['code'] == 0):
                         success = True
+                        break
                 except:
                     pass
                 sleep(0.5)
@@ -336,7 +340,7 @@ class User:
                 model="gpt-3.5-turbo",
                 temperature=2,
                 top_p=0,
-                max_tokens=min(2048, 4086 - safe_token_count(text)),
+                max_tokens=min(2048, 4086 - safe_token_count(text) - safe_token_count(system_msg)),
                 messages=[
                     {"role": "system", "content": system_msg},
                     {"role": "user", "content": text}
@@ -416,6 +420,7 @@ class Chat:
                 if (r['text']['code'] == 0):
                     success = True
                     self.chat_id = r['text']['data']['chat_id']
+                    break
             except:
                 pass
             sleep(0.5)
@@ -440,6 +445,7 @@ class Chat:
                 if (r['text']['code'] == 0):
                     success = True
                     question_msg_id = r['text']['data']['message_id']
+                    break
             except:
                 pass
             sleep(0.5)
@@ -466,6 +472,7 @@ class Chat:
             try:
                 if (r['text']['code'] == 0):
                     success = True
+                    break
             except:
                 pass
             sleep(0.5)
@@ -495,6 +502,7 @@ class Chat:
                     try:
                         if (r['text']['code'] == 0):
                             success = True
+                            break
                     except:
                         pass
                     sleep(0.5)
@@ -528,6 +536,7 @@ class Chat:
                 try:
                     if (r['text']['code'] == 0):
                         success = True
+                        break
                 except:
                     pass
                 sleep(0.5)
