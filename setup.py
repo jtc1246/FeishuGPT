@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='FeishuGPT',
-    version='0.1.2',
+    version='0.2.2',
     author='Tiancheng Jiao',
     author_email='jtc1246@outlook.com',
     url='https://github.com/jtc1246/FeishuGPT',
