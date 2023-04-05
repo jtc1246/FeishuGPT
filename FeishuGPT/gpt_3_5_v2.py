@@ -1130,16 +1130,16 @@ def start_async(feishu_app_id, app_secret, verification_token, openai_api_key, p
     start_new_thread(update_token, ())
     server = ThreadingHTTPServer(('0.0.0.0', port), Resquest)
     start_new_thread(server.serve_forever, ())
-    # try:
     try:
-        f = open(V2_PATH, 'r')
+        try:
+            f = open(V2_PATH, 'r')
+        except:
+            f = open(SAVE_PATH, 'r')
+        all_from_str(f.read())
+        f.close()
+        print("从本地文件加载数据成功")
     except:
-        f = open(SAVE_PATH, 'r')
-    all_from_str(f.read())
-    f.close()
-    print("从本地文件加载数据成功")
-    # except:
-    #     print("未找到本地文件或本地文件存在错误，无法访问历史数据（如果是第一次使用，请忽略此问题）")
+        print("未找到本地文件或本地文件存在错误，无法访问历史数据（如果是第一次使用，请忽略此问题）")
     sleep(2)
     if (token == ''):
         print('请检查app_id和app_secret是否正确')

@@ -9,7 +9,7 @@ __all__ = [
 ]
 
 
-__version__ = '0.2.1'
+__version__ = '0.2.2'
 __license__ = 'GPL-2.0 License'
 __author__ = 'Tiancheng Jiao'
 __url__ = 'https://github.com/jtc1246/FeishuGPT'
